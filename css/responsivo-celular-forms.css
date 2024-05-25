@@ -1,0 +1,8 @@
+@media (max-width: 800px) {
+    .navbar li {
+        margin-left: 10%;
+        font-size: 70%;
+       }
+       .localizacao p {
+        font-size: 90%;
+      } }

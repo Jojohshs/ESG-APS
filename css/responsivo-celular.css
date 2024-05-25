@@ -1,0 +1,23 @@
+@media (max-width: 800px) {
+    .cards {
+      grid-template-columns: 1fr;
+      display: grid;
+  
+     align-items: center;
+     justify-items: center;
+    }
+    .navbar li {
+     margin-left: 10%;
+     font-size: 90%;
+    }
+    .banner-principal {
+      font-size: 38%;
+      max-height: min-content;
+     
+    }
+    .localizacao p {
+      font-size: 90%;
+
+    }
+}
+

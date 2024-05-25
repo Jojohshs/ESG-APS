@@ -1,0 +1,17 @@
+@media (max-width:800px) {
+
+.navbar li {
+    margin-left: 10%;
+   }
+.consultoria-section {
+    grid-template-columns: 1fr;
+    display: grid;
+
+   align-items: center;
+   justify-items: center;
+
+}
+.localizacao p {
+    font-size: 90%;
+  }
+}

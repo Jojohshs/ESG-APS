@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!--Título principal da página -->
+
+    <title>Contagem de carbono</title>
+    <script type="text/javascript" src="../js/contagem-de-carbono.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsivo-celular-pegada-de-carbono.css">
+</head>
+<body>
+    <div class="navbar">
+        <nav>
+            <a href="#"> 
+                <img src="../img/Logo.jpeg" alt="hDC Host" class="logo" />
+            <ul class="navbar-items">
+                             
+                <li>
+                 
+        
+                  <li><a href="formulario.html">Feedback</a></li>
+                   <li>
+                       <a href="../index.html">Home</a> 
+                      </li>
+                       <li>
+                           <a href="consultoria.html">Consultoria</a>
+                           </li>
+                        </nav>
+
+        </ul>
+        <hr>
+
+            </div>
+
+<div>
+    <!-- Título principal do site --> 
+<h1 class="titulo-principal">Contagem de carbono</h1>
+
+</div>
+
+<main>
+    <!--Conteúdo principal do site --> 
+
+    <!-- Explicação de como realizar o cálculo das emissões de carbono--> 
+<div class="significado-do-resultado">
+    A pegada de carbono é a quantidade total  carbono que é emitida por uma pessoa, empresa ou por um produto.
+    Para realizar o cálculo é necessário saber: o consumo médio de energia elérica por Kwh, o consumo de água por m³, de gás de cozinha por m³ (junto da quantidade de botijões) e a geração de resíduos por m³. É preciso multiplicar o valor dos gastos com tala tividade, multiplicar pelo preço dessa atividade e somar os resultados. Por exemplo em Maio de 2024, 1kwh = 0,03 KgCo2e. Se por exemplo uma pessoa gaste com energia 100kw/h por mês, para saber a emissão de carbono para essa atividade, deve-se multiplicar 100 (quantidade gasta com a atividade, neste caso em Kwh) x o valor de 1 Kwh em emissões de carbono (0,03), que é igual a 3KgCo2e. Para realizar esse cálculo de forma rápida e simples, preencha os campos abixos com as informações que se pedem.
+</div>
+<!-- Seção com a imagem de fundo--> 
+<section class="imagem-de-fundo">
+    <!-- Div com os cards com as informações necessárias para realizar a conta das emissões de carbono --> 
+<div class="cards-calculo">
+
+<div class="energia-eletrica">
+<h1>Consumo médio de energia eletrica</h1>
+<!--Campo para colocar o consumo médio de energia elétrica em kwh-->
+
+<input type="number" id="numero1" placeholder="Kwh">
+<p id="gasto-mensal-energia"> Mensal</p>
+
+<!--Mostra a correspondência do valor de energia mensal com o valor colocado-->
+<p id="valor-mensal-energia">0,00</p>
+
+<!--Botão que quando clicado mostra a corrspondência do valor colocado em "valor-mensal-energia"-->
+<button onclick=" mudarvalorenergia()" id="adicionar-valor-energia">correspondência em Carbono</button>
+</div>
+
+<div class="agua">
+    <h1>Consumo médio de água</h1>
+    <!--Campo para colocar o consumo médio de água em m³-->
+
+    <input type="number" id="numero2" placeholder="m³">
+
+
+    <p id="gasto-mensal-agua"> Mensal</p>
+
+    <!--Mostra a correspondência do valor de água mensal com o valor colocado-->
+    <p id="valor-mensal-agua">0,00</p>
+    <!--Botão que quando clicado mostra a corrspondência do valor colocado em "valor-mensal-agua"-->
+    <button onclick="mudarvaloragua()" id="adicionar-valor-agua">correspondência em Carbono</button>
+    </div>
+
+    <div class="gas">
+        <h1>Consumo médio de gás</h1>
+        <!--Campo para colocar o consumo médio de gás em m³-->
+
+        <input type="number" id="numero3" placeholder="m³ de gás encanado">
+        
+  
+ <!--Campo para colocar o número de butijões usados mensalmente-->
+        <input type="number" id="numero3segundo" placeholder="Quantidade de butijões">
+        <p id="gasto-mensal-gas">Mensal</p>
+        <!--Mostra a correspondência do valor de gás mensal com o valor colocado-->
+        <p id="valor-mensal-gas">0,00</p>
+        <!--Botão que quando clicado mostra a corrspondência do valor colocado em "valor-mensal-gás"-->
+        <button onclick="mudarvalorgas ()" id="adicionar-valor-gas">correspondência em Carbono</button>
+        
+        
+        </div>
+
+        <div class="residuos">
+            <h1>Geração média de resíduos</h1>
+             <!--Campo para colocar o consumo médio de gás em m³-->
+
+            <input type="number" id="numero4" placeholder="m³ de gás encanado">
+            <p id="gasto-mensal-residuos">Mensal</p>
+             <!--Mostra a correspondência do valor de gás mensal com o valor colocado-->
+            <p id="valor-mensal-residuos">0,00</p>
+             <!--Botão que quando clicado mostra a corrspondência do valor colocado em "valor-mensal-resíduos"-->
+            <button onclick="mudarvalorresiduos()" id="adicionar-valor-residuos">correspondência em Carbono</button>
+
+            </div>
+
+</div>
+
+     <!--Botão que quando clicado realiza a soma dos valores colocados nos campos anteriores-->
+    <button class="btn-soma" onclick="calcularsoma() ">Emissões de carbono</button>
+ <!--Local onde aparece o resultafo das emissões ao clicar no "btn-soma"-->
+    <p id="resultado">Total:</p>
+</section>
+<!-- Fim do conteúdo principal do site --> 
+</main>
+
+<hr>
+       <!--Seção com localização e número de contato-->
+       <section class="links">
+        <!--Footer com localização e número de contato-->
+                       <footer>
+                           
+       <div class="localizacao">
+      <!--Rua onde se localiza a empresa e o número para contato-->
+       <p>Rua: Xyz, bairro yxz</p>
+       <p>Número para contato: 4002-8922</p>
+       <p>E-mail: autoesg67@gmail.com</p>
+       </div>
+       <!--Fim do Footer com localização e número de contato-->
+                       </footer>
+                        <!--Fim da Seção com localização e número de contato-->
+                    </section>
+</body>
+</html>

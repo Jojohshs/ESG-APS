@@ -1,0 +1,544 @@
+/* Permite a compatibilidade com acentuação*/
+@charset "UTF-8";
+
+
+/* Configurações do header*/
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    z-index: 999;
+    background-color: #86D3A050;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+  }
+  /* configurações da Navbar */
+  .navbar {
+      width: 100%;
+      height: 80px;
+      background-color: green;
+      padding: 0 rem;
+      margin-bottom: 100px;}
+  
+  /* configurações das navbar-itens */
+  .navbar-itens {position: absolute;
+      right: 0;
+      height: 60px;
+      gap: 5px;
+      margin-left: 0;
+      display: inline-block;
+  
+    
+  }
+  /* configurações das nav*/
+      nav {
+          position: relative;
+        }
+        /* configurações das Logo*/
+        .logo {
+            margin-top: 5px;
+            margin-left: 5px;
+          width: 70px;
+          height: 70px;
+        }
+        /* configurações da navbar-items*/
+        .navbar-items {
+          position: absolute;
+          right: 0;
+          height: 60px;
+         gap: 5px;
+          margin-left: 0;
+          display: inline-block;
+      
+         
+        }
+          /* configurações dos "li" da Navbar-itens */
+        .navbar-items li {
+          display: inline-block;
+          text-transform: uppercase;
+          margin-left: 20px;
+        
+        }
+        /* configurações dos links da Navbar-itens */
+        .navbar-items a {
+          color: black;
+          text-decoration: none;
+          transition: 0.5s;
+          margin-right: 10px;
+        
+        }
+        /* configurações dos links da Navbar-itens quando o mouse é passado em cima deles */
+        .navbar-items a:hover {
+          color: #ccc;
+        }
+/* Configurações do banner Principal */
+.banner-principal {
+    background-image: url("../img/cidade_verde01.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40vh;
+position: relative;
+    padding: 25vh;
+    
+}
+/* configurações do "h1" e "p" do banner principal  */
+.banner-principal h1, .banner-principal p{
+    text-align: center;
+    font-weight: bold;
+  
+    
+}
+/* configurações do "h1" do banner principal */
+.banner-principal h1 {
+    font-size: 6em;
+    color: white;
+
+}
+/* configurações do "p" do banner principal */
+.banner-principal p {
+    font-size: 4em;
+    color: white;
+    margin-bottom: 50px;
+}
+
+/* Configurações da imagem principal */
+
+.imagem1 {
+    background-image: url("../img/cidade_vede1.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: fit-content;
+}
+    
+/* Configurações dos cards com links para outras páginas */
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 20px;
+           justify-content: center;
+           align-items: center;
+        font-size: 16px;
+        border: 2px solid gray;
+      
+    }
+    /* Configurações do "significado de ESG" */
+    .cards .links {
+        border: 1px solid black;
+        border-radius: 40px;
+        margin-top: 20px;
+        background-color: white;
+        width: 360px;
+    padding-top: 30px;
+    height: 320px;
+    margin-left: 20px;
+    }
+    /* Configurações do "hr" */
+    hr 
+    {
+        margin-top: 30px;
+        margin-bottom: 30px;
+            height: 5px;
+            border-color: orange;
+            background-color: orange;
+           }
+         
+           /* Configurações da localização e informações de contato */
+           .localizacao {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            gap: 50px;
+         margin-left: 8%;
+           }
+               /* Configurações do parágrafos da localização e informações de contato */
+           .localizacao p {
+            font-size: 20px;
+              
+           }
+           
+/* Feedback*/
+
+             /* configurações do título principal */
+.t1 {
+  text-align: center;
+  font-size: 35px;
+  margin-top: 30px;
+
+}
+/* configurações da primeira pergunta */
+.p1 {
+  margin-left: 25px;
+ text-align: center;
+ font-size: 20px;
+ font-style: normal;
+}
+
+/* configurações da seguunda pergunta */
+.p2 {
+  margin-left: 25px;
+  text-align: center;
+  margin-top: 35px;
+  font-style: normal;
+}
+/* configurações da terceira pergunta */
+.p3 {
+  margin-left: 25px;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: normal;
+}
+/* configurações da quarta pergunta */
+.p4 {
+  margin-left: 25px;
+  text-align: center;
+  font-size: 20px;
+
+}
+/* div com o botão para enviar as informações respondidas no questionário*/
+.enviar {
+  text-align: center;
+ 
+}
+/* Botão para enviar as informações respondidadas no questionário*/
+.enviar button {
+  width: 100px;
+  height: 30px;
+
+}
+
+/*Cálculo de carbono */
+.titulo-principal {
+  text-align: center;
+  font-size: 36px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+/* Explicação do cálculo de contagem de carbono*/
+
+.significado-do-resultado {
+border: 2px solid black;
+border-radius: 10px;
+border-width: 2px;
+width: auto;
+height: auto;
+margin-bottom: 30px;
+margin-top: 30px;
+margin-left: 5px;
+font-size: 20px;
+background-color: white;
+
+}
+
+/* div com os cards para realizar os cálculos das emissões de carbono*/
+.cards-calculo {
+
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr 1fr;
+grid-gap: 20px;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+/* Configurações do parágrafo dentro do card-energia-elétrica*/
+.energia-eletria p {
+font-size: 20px;
+font-weight: bold;
+}
+/* Configurações do campo onde deve-de colocar o gasto mensal de energia-elétrica */
+
+#numero1 {
+width: auto;
+height: auto;
+}
+/* Configurações do campo "gasto-mensal-energia" */
+#gasto-mensal-energia{
+padding-left: 190px;
+font-size: 25px;
+font-weight: bold;
+margin-bottom: 110px;
+margin-left: 50px;
+
+
+}
+/* Configurações do card de energia elétrica */
+
+.energia-eletrica {
+
+padding-bottom: 30px;
+border: 3px solid black;
+padding-right: 30px;
+width: 300px;
+height: 300px;
+background-color: white;
+margin-top: 30px;
+margin-left: 60px;
+}
+
+/* Configurações do gasto de energia elétrica */
+
+#valor-mensal-energia{
+margin-left: 250px;
+font-size: 25px;
+font-weight: bold;
+margin-top: -170px;
+margin-top: -100px;
+}
+
+/* Configurações do botão para adicionar valore da energia-elétrica*/
+#adicionar-valor-energia {
+width: auto;
+height: auto;
+}
+
+
+/* Configurações do parágrafo dentro do card-água*/
+.agua p {
+font-size: 20px;
+font-weight: bold;
+}
+
+/* Configurações do campo onde deve-de colocar o gasto mensal de água */
+#numero2 {
+width: auto;
+height: auto;
+}
+/* Configurações do gasto mensal de água */
+#gasto-mensal-agua{
+padding-left: 190px;
+font-size: 25px;
+font-weight: bold;
+margin-bottom: 110px;
+margin-left: 50px;
+}
+
+/* Configurações do card de água */
+.agua {
+margin-top: 30px;
+padding-bottom: 30px;
+border: 3px solid black;
+padding-right: 30px;
+width: 300px;
+height: 300px;
+
+background-color: white;
+}
+/* Configurações do valor mensal de água */
+#valor-mensal-agua{
+margin-left: 250px;
+font-size: 25px;
+font-weight: bold;
+margin-top: -170px;
+margin-top: -100px;
+}
+/* Configurações do botão para adicionar valor da água*/
+#adicionar-valor-agua {
+width: auto;
+height: auto;
+}
+
+/* Configurações do botão para adicionar valor da água*/
+#adicionar-valor-gas {
+width: auto;
+height: auto;
+}
+
+/* Configurações do parágrafo dentro do card-gás*/
+.gas p {
+font-size: 20px;
+font-weight: bold;
+}
+/* Configurações do campo onde deve-de colocar o gasto mensal de gás*/
+#numero3 {
+width: auto;
+height: auto;
+}
+/* Configurações do campo onde deve-de colocar o número de butijões de gás usados por mês*/
+.gas #numero3segundo{
+width: auto;
+height: auto;
+margin-top: 60px;
+}
+/* Configurações do botão para adicionar valor do gás */
+#gasto-mensal-gas{
+padding-left: 190px;
+font-size: 25px;
+font-weight: bold;
+padding-bottom: 150px;
+margin-top: -70px;
+margin-left: 50px;
+
+}
+
+/* Configurações do card de gás */
+.gas {
+
+padding-bottom: 30px;
+border: 3px solid black;
+padding-right: 30px;
+width: 300px;
+height: 300px;
+margin-left: 60px;
+padding-bottom: -36px;
+background-color: white;
+}
+/* Configurações do valor mensal de gás */
+#valor-mensal-gas{
+margin-left: 250px;
+font-size: 25px;
+font-weight: bold;
+margin-top: -170px;
+margin-top: -165px;
+}
+
+.residuos {
+
+padding-bottom: 30px;
+border: 3px solid black;
+padding-right: 30px;
+width: 300px;
+height: 300px;
+background-color: white;
+
+}
+#valor-mensal-residuos{
+margin-left: 250px;
+font-size: 25px;
+font-weight: bold;
+margin-top: -170px;
+margin-top: -100px;
+}
+.residuos p {
+font-size: 20px;
+font-weight: bold;
+}
+#numero4 {
+width: auto;
+height: auto;
+}
+#gasto-mensal-residuos{
+padding-left: 190px;
+font-size: 25px;
+font-weight: bold;
+margin-bottom: 110px;
+margin-left: 50px;
+}
+#adicionar-valor-residuos {
+width: auto;
+height: auto;
+}
+
+
+/* Seção com a imagem de fundo*/
+.imagem-de-fundo {
+background-image: url(../img/cidade_verde01.png);
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+height: fit-content;
+}
+
+
+/* botão para realizar o cálculo das emissões */
+.btn-soma {
+margin-left: 35%;
+margin-top: 30px;
+width: fit-content;
+height: fit-content;
+font-size: 18px;
+}
+/* Configurações de onde o resultado da conta é mostrado */
+#resultado {
+border-radius: 10px;
+border-width: 2px;
+
+border: 1px solid orange;
+text-align: center;
+font-size: 28px;
+font-weight: bold;
+color: white;
+border-left: 2px;
+border-right: 2px;}
+
+
+/* Configurações da página de cosultoria */
+
+ /* Seção com configurações da imagem principal*/
+ .imagem-principal {
+  background-image:url(../img/cidade_verde01.png) ;
+  background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+height: fit-content;
+}
+/* Configurações do titulo principal e do parágrafo dentro da seção "imagem-principal"  */
+.imagem-principal h1, .imagem-principal p{
+  text-align: center;
+  font-weight: bold;
+}
+/* Configurações do título principal dentro da div "titulo-principal" */
+.titulo-principal h1 {
+font-size: 35px;
+color: black;
+}
+
+/*Configurações da seção com o título secunário */
+.secao2 {
+margin-top: 100px;
+background-color: black;
+padding-top: 50px;
+padding-bottom: 50px;
+margin-bottom: 50px;
+}
+/*Configurações do título secunário */
+.secao2 p {
+text-align: center;
+font-size: 35px;
+color: white;
+
+
+}
+/* Seção com a explicação de como funciona a consultoria */
+.consultoria-section {
+background-image: url(../img/cidade_verde01.png);
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+align-items: center;
+align-content: center;
+gap: 50px;
+}
+
+/* Configurações do parágrafo dentro da seção: "consultoria-section" */
+.consultoria-section p {
+margin-left: 10px;
+}
+/* Configurações dos títulos dentro da seção: "consultoria-section" */
+.consultoria-section h1 {
+text-align: center;
+font-size: 30px;
+color:orange;
+}
+/* Configurações dos cards com as etapas da consultoria dentro da seção: "consultoria-section" */
+.consultoria-section .servicos  {
+border: 1px solid black;
+border-radius: 40px;
+margin-top: 10px;
+background-color: white;
+width: 360px;
+padding-top: 30px;
+height: 320px;
+
+}

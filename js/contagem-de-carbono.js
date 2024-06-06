@@ -1,14 +1,13 @@
 /* Função para calcular a emissão média de Co2*/
 
 function calcularsoma() {
-var num1 = parseFloat(document.getElementById ("numero1").value);
-var num2 = parseFloat(document.getElementById ("numero2").value);
-var num3 = parseFloat(document.getElementById ("numero3").value);
-var num3segundo = parseFloat(document.getElementById ("numero3segundo").value);
-var num4 = parseFloat(document.getElementById ("numero4").value);
-var resultadogas = num3 * num3segundo;
-var multi = num1 * num2 * num4;
-var resultadototal = resultadogas + multi;
+var num1 = parseFloat( document.getElementById ("valor-mensal-energia").value);
+var num2 = parseFloat(document.getElementById ("valor-mensal-agua").value);
+var num3 = parseFloat(document.getElementById ("valor-mensal-gas").value);
+var num4 = parseFloat(document.getElementById ("valor-mensal-residuos").value);
+var multi = num1 + num2 + num3 + num4;
+document.getElementById("resultado").innerText = "Total:" +multi;
+}
 document.getElementById("resultado").innerText = "Total:" +resultadototal;
 }
 

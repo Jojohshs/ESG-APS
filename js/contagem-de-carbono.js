@@ -8,8 +8,6 @@ var num4 = parseFloat(document.getElementById ("valor-mensal-residuos").value);
 var multi = num1 + num2 + num3 + num4;
 document.getElementById("resultado").innerText = "Total:" +multi;
 }
-document.getElementById("resultado").innerText = "Total:" +resultadototal;
-}
 
  
 /* Função para calcular a correspondência da emissão média de Co2 por kwh de energia elétrica*/

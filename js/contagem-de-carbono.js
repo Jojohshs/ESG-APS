@@ -41,3 +41,5 @@ document.getElementById ("valor-mensal-gas").innerText = mult;
     var mult = mudarnum4 * 0.18;
     document.getElementById ("valor-mensal-residuos").innerText = mult;
   }
+
+  

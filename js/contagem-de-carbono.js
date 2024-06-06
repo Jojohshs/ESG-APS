@@ -7,7 +7,7 @@ var num3 = parseFloat(document.getElementById ("numero3").value);
 var num3segundo = parseFloat(document.getElementById ("numero3segundo").value);
 var num4 = parseFloat(document.getElementById ("numero4").value);
 var resultadogas = num3 * num3segundo;
-var multi = num1 + num2 + num4;
+var multi = num1 * num2 * num4;
 var resultadototal = resultadogas + multi;
 document.getElementById("resultado").innerText = "Total:" +resultadototal;
 }
